@@ -22,6 +22,8 @@ def clean_resume(resume_text):
 # web app
 def main():
     st.title("Resume Screening App")
+    st.subheader('This is a subheader with a divider', divider='rainbow')
+    st.subheader('_Streamlit_ is :blue[cool] :sunglasses:')
     uploaded_file = st.file_uploader('Upload Resume', type=['txt','pdf'])
 
     if uploaded_file is not None:
