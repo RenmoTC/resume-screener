@@ -21,7 +21,8 @@ def clean_resume(resume_text):
     return clean_text
 # web app
 def main():
-    st.title("Resume Screening App")
+    st.header('Resume Screener', divider='rainbow')
+    st.subheader('Miniproject :blue[NLP]')
     uploaded_file = st.file_uploader('Upload Resume', type=['txt','pdf'])
 
     if uploaded_file is not None:
